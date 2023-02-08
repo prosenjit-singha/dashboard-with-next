@@ -1,12 +1,13 @@
 import Card from "./Card";
 import { MdAdd } from "react-icons/md";
 import cards from "./cards";
+import SummeryCard from "./SummeryCard";
 
 export default function DashboardHeaderSection() {
   return (
-    <section className="flex justify-end px-6 py-5">
-      <div></div>
-      <div className="flex">
+    <section className="flex justify-end px-6 py-5 w-full">
+      <div className="flex w-full">
+        <SummeryCard />
         <Card cardDetails={cards[0]} />
         <Card cardDetails={cards[1]} cardBgColor="#628DB4" />
       </div>

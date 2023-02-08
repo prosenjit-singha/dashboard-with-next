@@ -14,7 +14,7 @@ function Card({ cardDetails, cardBgColor = "#0085FF" }: Props) {
 
   return (
     <div
-      className="bg-[#0085FF] rounded-xl overflow-hidden w-[315px] h-[200px] relative p-4 text-white flex flex-col mx-2"
+      className="bg-[#0085FF] rounded-xl overflow-hidden w-full h-[200px] relative p-4 text-white flex flex-col mx-2"
       style={{ background: cardBgColor }}
     >
       <Image
