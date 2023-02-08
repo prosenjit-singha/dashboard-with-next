@@ -12,7 +12,7 @@ export default function NavLink({ icon, children, active, ...rest }: Props) {
     <Link
       className={`rounded-md flex items-center gap-5 px-4 py-3 transition-all ${
         active
-          ? "bg-blue-100/70 font-bold text-blue-500"
+          ? "bg-blue-100/70 font-semibold text-blue-500"
           : "text-slate-700 hover:bg-blue-100/70 hover:text-slate-900"
       }`}
       {...rest}
