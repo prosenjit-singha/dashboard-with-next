@@ -5,13 +5,17 @@ import { splitCardNumber } from "@/utils/cardHelpers";
 
 type Props = {
   cardDetails: { number: number };
+  cardBgColor?: string;
 };
 
-function Card({ cardDetails }: Props) {
+function Card({ cardDetails, cardBgColor = "#0085FF" }: Props) {
   const numbers = splitCardNumber(cardDetails.number);
 
   return (
-    <div className="bg-[#0085FF] rounded-xl overflow-hidden w-[315px] h-[200px] relative p-4 text-white flex flex-col mx-2">
+    <div
+      className="bg-[#0085FF] rounded-xl overflow-hidden w-[315px] h-[200px] relative p-4 text-white flex flex-col mx-2"
+      style={{ background: cardBgColor }}
+    >
       <Image
         src={overlay}
         alt="Overlay"
@@ -25,9 +29,9 @@ function Card({ cardDetails }: Props) {
 
       {/* Card Number */}
       <p className="flex gap-2 text-lg mt-auto mb-4">
-        <span>3475</span>
-        <span>7381</span>
-        <span>3759</span>
+        <span>{numbers[0]}</span>
+        <span>{numbers[1]}</span>
+        <span>{numbers[2]}</span>
         <span>****</span>
       </p>
 
