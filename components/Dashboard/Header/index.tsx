@@ -13,16 +13,16 @@ export default function DashboardHeader() {
       <h1 className="text-2xl text-gray-900 font-semibold">Dashboard</h1>
 
       {/* right part of the header */}
-      <div className="ml-auto flex items-center gap-4">
+      <div className="ml-auto flex items-center gap-2">
         {/* Search field */}
         <form
           onSubmit={handleSubmit}
-          className="min-w-[260px] rounded-md border flex"
+          className="min-w-[260px] rounded-md border flex outline outline-transparent focus-within:border-blue-300 focus-within:outline-blue-200 hover:border-blue-300"
         >
           <input
             name="search"
             placeholder="Search"
-            className="text-[16px] pl-4 pr-2 py-2 focus-visible:outline-none"
+            className="text-[16px] pl-4 pr-2 py-2 focus-visible:outline-none bg-transparent"
           />
           <button
             type="submit"
@@ -33,13 +33,14 @@ export default function DashboardHeader() {
         </form>
 
         {/* Notification Icon */}
-        <button className="text-[29px] relative">
+        <button className="text-[29px] relative hover:text-blue-700 hover:bg-blue-100/70 p-1 rounded-full">
           <NotificationIcon />
-          <span className="absolute top-[1px] right-[1px] w-[8px] h-[8px] rounded-xl bg-red-500" />
+          <span className="absolute top-[10%] right-[10%] w-[8px] h-[8px] rounded-xl bg-red-500" />
         </button>
-        <button className="text-[33px] relative">
+
+        <button className="text-[33px] relative hover:text-blue-700 hover:bg-blue-100/70 p-1 rounded-full">
           <BiUserCircle />
-          <span className="absolute top-[1px] right-[1px] w-[10px] h-[10px] rounded-xl bg-green-600 border-2 border-white" />
+          <span className="absolute top-[10%] right-[10%] w-[10px] h-[10px] rounded-xl bg-green-600 border-2 border-white" />
         </button>
       </div>
     </header>
