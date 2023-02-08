@@ -9,7 +9,7 @@ export default function Dashboard() {
         <Card />
         <Card />
       </div>
-      <button className="flex flex-col-reverse items-center justify-center gap-2 text-blue-600 bg-blue-100/70 p-2 py-3 rounded-md">
+      <button className="flex flex-col-reverse items-center justify-center gap-2 text-primary bg-primary-container p-2 py-3 rounded-md hover:bg-blue-100 transition">
         <MdAdd size={20} />
         <span className="write-vertical text-xl">Add Card</span>
       </button>

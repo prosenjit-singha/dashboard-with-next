@@ -10,10 +10,10 @@ export default function NavLink({ icon, children, active, ...rest }: Props) {
   const Icon = icon;
   return (
     <Link
-      className={`rounded-md flex items-center gap-5 px-4 py-3 transition-all ${
+      className={`rounded-md flex items-center gap-5 px-4 py-3 transition hover:bg-blue-100 ${
         active
-          ? "bg-blue-100/70 font-semibold text-blue-500"
-          : "text-slate-700 hover:bg-blue-100/70 hover:text-slate-900"
+          ? "font-semibold text-primary bg-primary-container"
+          : "text-slate-700 hover:text-slate-900"
       }`}
       {...rest}
     >
