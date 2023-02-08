@@ -2,11 +2,11 @@ import DashboardHeader from "../Header";
 
 type Props = {
   children: JSX.Element;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
-export default function MainSection({ children }: Props) {
+export default function MainSection({ children, ...rest }: Props) {
   return (
-    <main>
+    <main {...rest}>
       <DashboardHeader />
       {children}
     </main>

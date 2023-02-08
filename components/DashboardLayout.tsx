@@ -7,9 +7,9 @@ type Props = {
 
 export default function DashboardLayout({ children }: Props) {
   return (
-    <div>
-      <NavPanel />
-      <MainSection>{children}</MainSection>
+    <div className="flex max-w-7xl mx-auto min-h-[100vh]">
+      <NavPanel className="col-start-1 col-end-4 p-6 outline outline-red-400 min-w-[256px] flex flex-col" />
+      <MainSection className="col-start-4 col-end-13">{children}</MainSection>
     </div>
   );
 }
