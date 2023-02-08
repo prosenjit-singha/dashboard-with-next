@@ -2,9 +2,10 @@ import Image from "next/image";
 import overlay from "@/assets/images/card-overlay-1.png";
 import chip from "@/assets/images/chip.png";
 import { splitCardNumber } from "@/utils/cardHelpers";
+import { Card } from "./cards";
 
 type Props = {
-  cardDetails: { number: number };
+  cardDetails: Card;
   cardBgColor?: string;
 };
 
