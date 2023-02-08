@@ -13,3 +13,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.write-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
