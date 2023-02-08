@@ -1,5 +1,4 @@
 import { BiSearch, BiUserCircle } from "react-icons/bi";
-import { HiUserCircle } from "react-icons/hi";
 import { MdNotificationsNone as NotificationIcon } from "react-icons/md";
 
 export default function DashboardHeader() {
@@ -8,7 +7,7 @@ export default function DashboardHeader() {
   }
 
   return (
-    <header className="flex items-center px-6 py-4 border-b-2 w-full">
+    <header className="flex items-center px-6 py-4 border-b-[1px] border-gray-300 w-full">
       {/* Title */}
       <h1 className="text-2xl text-gray-900 font-semibold">Dashboard</h1>
 
