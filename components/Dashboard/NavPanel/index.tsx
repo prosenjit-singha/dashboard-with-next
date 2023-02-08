@@ -11,6 +11,7 @@ export default function NavPanel(props: Props) {
         <Image src={logo} alt="Logo" />
         Cashon
       </Link>
+      <nav>{}</nav>
     </section>
   );
 }
