@@ -5,8 +5,8 @@ import SummeryCard from "./SummeryCard";
 
 export default function DashboardHeaderSection() {
   return (
-    <section className="flex justify-end mx-6 py-5 w-full border-b-[1px]">
-      <div className="flex w-full">
+    <section className="flex justify-end mx-6 py-5 border-b-[1px]">
+      <div className="flex basis-full">
         <SummeryCard />
         <Card cardDetails={cards[0]} />
         <Card cardDetails={cards[1]} cardBgColor="#628DB4" />
