@@ -22,10 +22,10 @@ export function TableRow({ data }: Props) {
     id,
     name,
     category,
-    date,
+    // date,
     paymentMethod,
     price,
-    profilePhoto,
+    // profilePhoto,
     status,
     transactionType,
   } = data;
@@ -50,7 +50,10 @@ export function TableRow({ data }: Props) {
 
         {price}
       </TableData>
+
+      {/* just for template use any date formatter library like date.js date-fns */}
       <TableData>{"Aug 02, 2023"}</TableData>
+
       <TableData>{category}</TableData>
       <TableData>{paymentMethod}</TableData>
       <TableData>
