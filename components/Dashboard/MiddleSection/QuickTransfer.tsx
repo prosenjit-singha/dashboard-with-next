@@ -36,7 +36,7 @@ function QuickTransfer(props: Props) {
 
       <input
         type="number"
-        placeholder="Enter your amount"
+        placeholder="Transfer Amount"
         className="px-3 py-2 w-full rounded-md border text-primary hover:border-primary hover:outline-primary focus-visible:outline-primary my-2 transition"
       />
 
