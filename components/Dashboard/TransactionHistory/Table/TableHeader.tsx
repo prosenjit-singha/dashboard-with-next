@@ -7,7 +7,7 @@ const Thead = ({ children }: { children: string }) => (
 export function TableHeader() {
   return (
     <thead className="w-full border-t-[1px] border-b-[1px]">
-      <tr className="h-10">
+      <tr className="min-h-10">
         <Thead>ID</Thead>
         <Thead>Name</Thead>
         <Thead>Price</Thead>
