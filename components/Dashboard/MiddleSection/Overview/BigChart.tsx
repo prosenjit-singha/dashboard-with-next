@@ -15,6 +15,18 @@ function BigChart() {
           },
           stroke: {
             curve: "smooth",
+            width: 2,
+          },
+          fill: {
+            opacity: 1,
+            type: "",
+            colors: ["#0085FF", "#FFBF1A"],
+            gradient: {
+              shadeIntensity: 1,
+              opacityFrom: 0.7,
+              opacityTo: 0.9,
+              stops: [0, 90, 100],
+            },
           },
           xaxis: {
             type: "datetime",
@@ -28,6 +40,7 @@ function BigChart() {
               "2018-09-19T06:30:00.000Z",
             ],
           },
+          colors: ["#0085FF", "#FFBF1A"],
           tooltip: {
             x: {
               format: "dd/MM/yy HH:mm",
@@ -48,11 +61,11 @@ export default BigChart;
 // dummy data
 const series = [
   {
-    name: "series1",
+    name: "Income",
     data: [31, 40, 28, 51, 42, 109, 100],
   },
   {
-    name: "series2",
+    name: "Expanses",
     data: [11, 32, 45, 32, 34, 52, 41],
   },
 ];
