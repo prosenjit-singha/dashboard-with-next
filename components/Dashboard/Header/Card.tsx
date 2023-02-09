@@ -7,20 +7,21 @@ import { Card } from "./cards";
 type Props = {
   cardDetails: Card;
   cardBgColor?: string;
-};
+} & React.ComponentProps<"button">;
 
-function Card({ cardDetails, cardBgColor = "#0085FF" }: Props) {
+function Card({ cardDetails, cardBgColor = "#0085FF", ...rest }: Props) {
   const numbers = splitCardNumber(cardDetails.number);
 
   return (
-    <div
-      className="bg-[#0085FF] rounded-xl overflow-hidden w-full h-[200px] relative p-4 text-white flex flex-col mx-2"
+    <button
+      className="bg-[#0085FF] rounded-xl overflow-hidden w-full h-[200px] relative p-4 text-white flex flex-col mx-2 hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.01] active:scale-[0.98] transition"
       style={{ background: cardBgColor }}
+      {...rest}
     >
       <Image
         src={overlay}
         alt="Overlay"
-        className="absolute top-0 left-0 w-full h-full -z-1"
+        className="absolute top-0 left-0 w-full h-full -z-2 pointer-events-none"
       />
       {/* card header */}
       <section className="flex justify-between gap-4">
@@ -47,7 +48,7 @@ function Card({ cardDetails, cardBgColor = "#0085FF" }: Props) {
           <p>04/24</p>
         </div>
       </section>
-    </div>
+    </button>
   );
 }
 

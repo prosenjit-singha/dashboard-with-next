@@ -32,12 +32,12 @@ export default function DashboardHeader() {
         </form>
 
         {/* Notification Icon */}
-        <button className="text-[29px] relative hover:text-blue-700 hover:bg-blue-100/70 p-1 rounded-full">
+        <button className="text-[29px] relative hover:text-primary hover:bg-primary-container p-1 rounded-full">
           <NotificationIcon />
           <span className="absolute top-[10%] right-[10%] w-[8px] h-[8px] rounded-xl bg-red-500" />
         </button>
 
-        <button className="text-[33px] relative hover:text-blue-700 hover:bg-blue-100/70 p-1 rounded-full">
+        <button className="text-[33px] relative hover:text-primary hover:bg-primary-container p-1 rounded-full">
           <BiUserCircle />
           <span className="absolute top-[10%] right-[10%] w-[10px] h-[10px] rounded-xl bg-green-600 border-2 border-white" />
         </button>
