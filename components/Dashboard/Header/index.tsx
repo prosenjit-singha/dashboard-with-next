@@ -5,7 +5,7 @@ import SummeryCard from "./SummeryCard";
 
 export default function DashboardHeaderSection() {
   return (
-    <section className="flex justify-end px-6 py-5 w-full">
+    <section className="flex justify-end mx-6 py-5 w-full border-b-[1px]">
       <div className="flex w-full">
         <SummeryCard />
         <Card cardDetails={cards[0]} />
