@@ -17,14 +17,20 @@ export default function SummeryCard() {
       </div>
 
       {/* income */}
-      <div className="border-r-[1px] px-4 my-4">
-        <Label>Income</Label>
-        <Text>51,321</Text>
+      <div className="border-r-[1px] px-4 my-4 flex items-end justify-between">
+        <div>
+          <Label>Income</Label>
+          <Text>51,321</Text>
+        </div>
+        <div className="text-[#2DBF3C]">+2.01</div>
       </div>
       {/* expenses */}
-      <div className="p-4">
-        <Label>Expenses</Label>
-        <Text>21,321</Text>
+      <div className="p-4 flex items-end justify-between">
+        <div className="">
+          <Label>Expenses</Label>
+          <Text>21,321</Text>
+        </div>
+        <div className="text-[#FF7D33]">-0.05</div>
       </div>
     </div>
   );
