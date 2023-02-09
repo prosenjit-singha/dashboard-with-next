@@ -41,7 +41,7 @@ const transactionHistory: Transaction[] = [
     transactionType: "expense",
     category: "Misc.",
     paymentMethod: "Online Banking",
-    status: "pending",
+    status: "completed",
     date: new Date(),
     profilePhoto: null,
   },
