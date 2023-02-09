@@ -19,3 +19,15 @@ body {
   text-orientation: mixed;
   transform: rotate(180deg);
 }
+
+// hides input field arrow
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}

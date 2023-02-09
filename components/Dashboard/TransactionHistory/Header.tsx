@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className=" flex justify-between mb-2">
+    <div className="flex justify-between mb-2 px-4">
       <h2 className="text-lg font-semibold text-[#1A1A1A]">
         Transaction History
       </h2>
