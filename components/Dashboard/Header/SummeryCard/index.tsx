@@ -1,4 +1,5 @@
-import { channel } from "diagnostics_channel";
+import Image from "next/image";
+import graph from "@/assets/images/graph.png";
 
 export default function SummeryCard() {
   return (
@@ -11,7 +12,9 @@ export default function SummeryCard() {
         <Text>1,251,321</Text>
       </div>
       {/* chart */}
-      <div className="py-4 mr-4 border-b-[1px]">chart</div>
+      <div className="py-4 mr-4 border-b-[1px]">
+        <Image src={graph} alt="Graph" />
+      </div>
 
       {/* income */}
       <div className="border-r-[1px] px-4 my-4">

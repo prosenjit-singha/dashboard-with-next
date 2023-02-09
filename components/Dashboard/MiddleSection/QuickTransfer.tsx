@@ -1,10 +1,10 @@
 import { MdAdd } from "react-icons/md";
 
-type Props = React.ComponentProps<"form">;
+type Props = React.ComponentProps<"div">;
 
 function QuickTransfer(props: Props) {
   return (
-    <form {...props}>
+    <div {...props}>
       <h2 className="text-lg font-semibold text-[#1A1A1A] mb-5">
         Quick Transfer
       </h2>
@@ -24,17 +24,17 @@ function QuickTransfer(props: Props) {
       {/* input */}
       <input
         name="cardNumber"
-        type="number"
+        type="text"
         placeholder="1234 5678 0099 ****"
         list="cardNumbers"
         className="px-3 py-2 w-full rounded-md border text-primary hover:border-primary hover:outline-primary focus-visible:outline-primary my-2 transition"
       />
       <datalist id="cardNumbers">
-        <option value="1234 5678 0091 ****" />
-        <option value="1234 5678 0092 ****" />
-        <option value="1234 5678 0093 ****" />
-        <option value="1234 5678 0094 ****" />
-        <option value="1234 5678 0095 ****" />
+        <option value="1234 5678 0091 1234" />
+        <option value="1234 5678 0092 5678" />
+        <option value="1234 5678 0093 9012" />
+        <option value="1234 5678 0094 3456" />
+        <option value="1234 5678 0095 7890" />
       </datalist>
 
       <input
@@ -58,7 +58,7 @@ function QuickTransfer(props: Props) {
           Save as Draft
         </button>
       </div>
-    </form>
+    </div>
   );
 }
 
