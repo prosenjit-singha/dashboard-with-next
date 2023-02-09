@@ -11,7 +11,7 @@ function TransactionHistory() {
           <TableHeader />
           <tbody>
             {transactionHistory.map((data) => (
-              <TableRow data={data} />
+              <TableRow data={data} key={data.id} />
             ))}
           </tbody>
         </table>
