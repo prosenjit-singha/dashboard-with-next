@@ -38,7 +38,7 @@ function Card({ cardDetails, cardBgColor = "#0085FF", ...rest }: Props) {
       </p>
 
       {/* Card Footer */}
-      <section className="flex justify-between gap-4">
+      <section className="flex justify-between gap-4 w-full text-left">
         <div>
           <h2 className="uppercase text-[12px]">Total Balance</h2>
           <p>3,215,325 USD</p>
