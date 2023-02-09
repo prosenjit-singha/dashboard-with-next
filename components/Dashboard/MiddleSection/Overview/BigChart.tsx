@@ -29,16 +29,34 @@ function BigChart() {
             },
           },
           xaxis: {
-            type: "datetime",
             categories: [
-              "2018-09-19T00:00:00.000Z",
-              "2018-09-19T01:30:00.000Z",
-              "2018-09-19T02:30:00.000Z",
-              "2018-09-19T03:30:00.000Z",
-              "2018-09-19T04:30:00.000Z",
-              "2018-09-19T05:30:00.000Z",
-              "2018-09-19T06:30:00.000Z",
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
             ],
+          },
+          yaxis: {
+            // title: {
+            //   text: "Temperature",
+            // },
+            min: 0,
+            max: 300,
+          },
+          legend: {
+            position: "top",
+            horizontalAlign: "right",
+            floating: true,
+            offsetY: -25,
+            offsetX: -5,
           },
           colors: ["#0085FF", "#FFBF1A"],
           tooltip: {
@@ -62,11 +80,11 @@ export default BigChart;
 const series = [
   {
     name: "Income",
-    data: [31, 40, 28, 51, 42, 109, 100],
+    data: [100, 240, 128, 251, 202, 109, 290],
   },
   {
     name: "Expanses",
-    data: [11, 32, 45, 32, 34, 52, 41],
+    data: [110, 112, 225, 130, 134, 52, 141],
   },
 ];
 
